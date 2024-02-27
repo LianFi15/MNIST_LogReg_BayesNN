@@ -59,19 +59,18 @@ Stochastic Gradient Descent (SGD) is an iterative optimization algorithm widely 
 
 In each iteration of SGD, a random subset or a single data point (hence the term "stochastic") is sampled from the entire dataset. The algorithm then updates the model parameters based on the gradient of the loss function with respect to those parameters. This process is repeated for a fixed number of iterations (epochs) or until convergence.
 
-\theta_{t+1} = \theta_t - \eta \nabla f(\theta_t, x_i, y_i)
-
 - $\text{Parameters Initialization: } {\theta^{(0)}}$
 
 - $\text{For } { t = 0, 1, 2, \ldots, \text{until convergence:} }$
 
-\theta_{t+1}: \text{Updated parameter vector at iteration } (t+1).
+  - $\theta_{t+1} = \theta_t - \eta \nabla f(\theta_t, x_i, y_i)$
 
-\theta_t: \text{Current parameter vector at iteration } t.
+Where,
 
-\eta: \text{Learning rate, determining the step size in the parameter space.}
-
-\nabla f(\theta_t, x_i, y_i): \text{Gradient of the loss function } f \text{ with respect to } \theta_t \text{ for the training example } (x_i, y_i). \text{ It indicates the direction to adjust the parameters for minimizing the loss.}
+- $\theta_{t+1}: {\text{Updated parameter vector at iteration } (t+1).}$
+- $\theta_t: {\text{Current parameter vector at iteration } t.}$
+- $\eta: {\text{Learning rate, determining the step size in the parameter space.}}$
+- $\nabla f(\theta_t, x_i, y_i): {\text{Gradient of the loss function } f \text{ with respect to } \theta_t \text{ for the training example } (x_i, y_i). \text{ It indicates the direction to adjust the parameters for minimizing the loss.}}$
 
 #### Adam Optimizer (used for Bayesian NN)
 
@@ -88,12 +87,12 @@ Where,
 - $\epsilon{\text{: Small constant to prevent division by zero}}$
 
 
-
-
 ## Results
 The logistic regression model with regularization achieves better accuracy, aiming to prevent overfitting on the data, keeping the weights relatively low to avoid exploding gradients. Notably, the test set's loss is more stable, and the model performs better with regularization.
 
 In Bayesian models, Model iii stands out with superior results due to its use of convolutional layers and more linear layers, enabling better data learning and generalization on the test set. The difference lies in the distribution functions associated with weights and biases in Bayesian models, providing uncertainty for each output.
 
 Logistic regression is a binary classification algorithm that computes the probability of a vector input belonging to a specific class. Bayesian models (iii-iv) exhibit relatively close results in terms of both loss and accuracy, as they approach the decision speed of logistic regression. However, Model v, consisting of only 2 linear layers, shows less favorable outcomes, indicating a less effective generalization, with a higher average loss.
+
+![](images/results.png)
 
