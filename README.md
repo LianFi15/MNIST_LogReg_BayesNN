@@ -28,7 +28,7 @@ Model v, a Bayesian model, consists of 2 linear layers with no convolutional lay
 
 
 ### The Dataset
-MNIST (Modified National Institute of Standards and Technology) is a widely used dataset in the field of machine learning and computer vision. It consists of a collection of 28x28 pixel grayscale images of handwritten digits (0 through 9). The dataset is commonly used for training and testing classification algorithms. MNIST serves as a benchmark for evaluating the performance of various machine learning models, particularly for image recognition tasks. Its simplicity makes it a popular starting point for beginners in the field of deep learning and pattern recognition.
+MNIST (Modified National Institute of Standards and Technology) is a widely used dataset in the field of machine learning and computer vision. It consists of a collection of 28x28 pixel grayscale images of handwritten digits (0 through 9). The dataset is commonly used for training and testing classification algorithms. MNIST serves as a benchmark for evaluating the performance of various machine learning models, particularly for image recognition tasks.
 
 ![](images/mnist_data.png)
 
